@@ -107,7 +107,7 @@ public class MainForm {
 	 */
 	private void initialize() {
 		frmPyramakerVer = new JFrame();
-		frmPyramakerVer.setTitle("Pyramaker ver. 1.0.0");
+		frmPyramakerVer.setTitle("Pyramaker ver. 1.0.1");
 		frmPyramakerVer.setResizable(false);
 		frmPyramakerVer.setBounds(100, 100, 756, 625);
 		frmPyramakerVer.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
