@@ -199,7 +199,7 @@ public class ImageDownloader {
                     double boundMaxY = params.getRegionLayerBounds().top + (((j + 1) * params.getTileSize()) / size) * params.getRegionLayerBounds().getHeight();
                     
                     // I like C# formatting =)
-                    final String url = params.getUrlPattern().replace("{0}", String.valueOf(i)).replace("{1}",String.valueOf(j)).replace("{2}",String.valueOf(z-1));// String.format(params.getUrlPattern(), i, j, z);
+                    final String url = params.getUrlPattern().replace("{0}", String.valueOf(i)).replace("{1}",String.valueOf(j)).replace("{2}",String.valueOf(z));// String.format(params.getUrlPattern(), i, j, z);
                     final String tileFilename = String.format("%s/%s/cache_%s_%s.tif", params.getPath(), pathNum, i - startXtile + 1, j - startYtile + 1);
                     final BufferedImage img = downloadImage(url,params.getTileSize());
                     try{
